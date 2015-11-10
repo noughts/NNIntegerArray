@@ -33,6 +33,10 @@
 }
 
 
+-(NSInteger*)array{
+	return _array;
+}
+
 -(NSUInteger)actualSize{
 	return _actualSize;
 }

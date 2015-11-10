@@ -1,7 +1,15 @@
+/*
+ 
+ 高速に要素にアクセスしたいときは、
+ [ary integerAtIndex:42]; の代わりに
+ ary.array[42];しましょう。メッセージ送信の処理が省けます
+ 
+ 
+ */
+
 @import Foundation;
 
-@interface NNIntegerArray : NSObject <NSFastEnumeration>
-{
+@interface NNIntegerArray : NSObject <NSFastEnumeration>{
 	NSInteger* _array;
 }
 
@@ -9,6 +17,8 @@
 
 /// 実際にデータが入ったサイズ
 -(NSUInteger)actualSize;
+
+-(NSInteger*)array;
 
 -(void)addInteger:(NSInteger)value;
 -(NSInteger)integerAtIndex:(NSUInteger)index;

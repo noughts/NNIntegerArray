@@ -14,6 +14,8 @@
 	NSLog( @"%@", @([_intArray actualSize]) );
 	[_intArray addInteger:42];
 	NSLog( @"%@", @([_intArray actualSize]) );
+	NSLog( @"%@", @(_intArray.array[0]) );
+
 	
 	NSUInteger len = _intArray.count;
 	for (NSInteger i=0; i<len; i++) {
