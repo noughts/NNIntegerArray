@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A82ABDB64D078AFA7D9059C /* Pods_NNIntegerArray_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BBDA470EDACB433844466E9 /* Pods_NNIntegerArray_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		407E94F5D5EA0BF21D9D6A56 /* Pods_NNIntegerArray_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 747A03579B297D40010B3B03 /* Pods_NNIntegerArray_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		0038C39EB589A5BBB6330A3F /* libPods-NNIntegerArray_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E589287D395938CB86EDCAF /* libPods-NNIntegerArray_Tests.a */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -23,6 +22,7 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		D5BBAEBF49B4E5E9C6CBE1E8 /* libPods-NNIntegerArray_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48D34B3ABD410858254D768F /* libPods-NNIntegerArray_Example.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +38,9 @@
 /* Begin PBXFileReference section */
 		0D120D1EF786CFCB9963BA19 /* Pods-NNIntegerArray_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NNIntegerArray_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NNIntegerArray_Tests/Pods-NNIntegerArray_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		1BE1D2881044A28296DD7CF2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		2BBDA470EDACB433844466E9 /* Pods_NNIntegerArray_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NNIntegerArray_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48D34B3ABD410858254D768F /* libPods-NNIntegerArray_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NNIntegerArray_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59E25C207CB8EFBF055716FD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		6003F58A195388D20070C39A /* NNIntegerArray.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = NNIntegerArray.app; path = NNIntegerArray_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F58A195388D20070C39A /* NNIntegerArray_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NNIntegerArray_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -59,8 +59,8 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		747A03579B297D40010B3B03 /* Pods_NNIntegerArray_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NNIntegerArray_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		8E589287D395938CB86EDCAF /* libPods-NNIntegerArray_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NNIntegerArray_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		90A4B4D1DC008E706C8ADD48 /* Pods-NNIntegerArray_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NNIntegerArray_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NNIntegerArray_Tests/Pods-NNIntegerArray_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		BCB341EFC4500B94C34D6F30 /* NNIntegerArray.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = NNIntegerArray.podspec; path = ../NNIntegerArray.podspec; sourceTree = "<group>"; };
 		C1D7DEFB147B1F5DEF7FD8B0 /* Pods-NNIntegerArray_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NNIntegerArray_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NNIntegerArray_Example/Pods-NNIntegerArray_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -75,7 +75,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				1A82ABDB64D078AFA7D9059C /* Pods_NNIntegerArray_Example.framework in Frameworks */,
+				D5BBAEBF49B4E5E9C6CBE1E8 /* libPods-NNIntegerArray_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +86,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				407E94F5D5EA0BF21D9D6A56 /* Pods_NNIntegerArray_Tests.framework in Frameworks */,
+				0038C39EB589A5BBB6330A3F /* libPods-NNIntegerArray_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,7 +119,7 @@
 		6003F58B195388D20070C39A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6003F58A195388D20070C39A /* NNIntegerArray.app */,
+				6003F58A195388D20070C39A /* NNIntegerArray_Example.app */,
 				6003F5AE195388D20070C39A /* Tests.xctest */,
 			);
 			name = Products;
@@ -132,8 +132,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				2BBDA470EDACB433844466E9 /* Pods_NNIntegerArray_Example.framework */,
-				747A03579B297D40010B3B03 /* Pods_NNIntegerArray_Tests.framework */,
+				48D34B3ABD410858254D768F /* libPods-NNIntegerArray_Example.a */,
+				8E589287D395938CB86EDCAF /* libPods-NNIntegerArray_Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -204,7 +204,6 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				967D688CE2ACEEC398781112 /* Embed Pods Frameworks */,
 				942711FFC2D209B02C45D7BC /* Copy Pods Resources */,
 			);
 			buildRules = (
@@ -213,7 +212,7 @@
 			);
 			name = NNIntegerArray_Example;
 			productName = NNIntegerArray;
-			productReference = 6003F58A195388D20070C39A /* NNIntegerArray.app */;
+			productReference = 6003F58A195388D20070C39A /* NNIntegerArray_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 		6003F5AD195388D20070C39A /* NNIntegerArray_Tests */ = {
@@ -224,7 +223,6 @@
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				D088E5F5C6283CA1F8AF3BC4 /* Embed Pods Frameworks */,
 				D1740F92BFC41C502310046D /* Copy Pods Resources */,
 			);
 			buildRules = (
@@ -336,36 +334,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NNIntegerArray_Example/Pods-NNIntegerArray_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		967D688CE2ACEEC398781112 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NNIntegerArray_Example/Pods-NNIntegerArray_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D088E5F5C6283CA1F8AF3BC4 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NNIntegerArray_Tests/Pods-NNIntegerArray_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D1740F92BFC41C502310046D /* Copy Pods Resources */ = {

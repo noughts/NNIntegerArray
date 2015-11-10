@@ -1,0 +1,14 @@
+PODS:
+  - NNIntegerArray (0.1.0)
+
+DEPENDENCIES:
+  - NNIntegerArray (from `../`)
+
+EXTERNAL SOURCES:
+  NNIntegerArray:
+    :path: ../
+
+SPEC CHECKSUMS:
+  NNIntegerArray: 7e906597d2f8dc3378040d162bf1461be2d6343b
+
+COCOAPODS: 0.38.2
