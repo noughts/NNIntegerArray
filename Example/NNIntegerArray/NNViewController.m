@@ -1,5 +1,6 @@
 #import "NNViewController.h"
 #import <NNIntegerArray.h>
+#import <NNProfiler.h>
 
 @implementation NNViewController{
 	NNIntegerArray* _intArray;
@@ -12,7 +13,7 @@
 	
 	NSInteger count = 10000000;
 	
-	NSLog(@"start");
+	[NNProfiler start:@"calc"];
 	_intArray = [[NNIntegerArray alloc] initWithCount:count];
 	for (int i=0; i<count; i++) {
 		[_intArray addInteger:i];
@@ -22,7 +23,7 @@
 	for (NSInteger i=0; i<count; i++) {
 		result += _intArray.array[i];
 	}
-	NSLog(@"end");
+	[NNProfiler end];
 }
 
 
