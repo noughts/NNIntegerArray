@@ -11,8 +11,9 @@
 	// Do any additional setup after loading the view, typically from a nib.
 	
 	_intArray = [[NNIntegerArray alloc] initWithCount:100];
-	NSLog( @"%@", @([_intArray integerAtIndex:0]) );
-	NSLog( @"%@", @([_intArray count]) );
+	NSLog( @"%@", @([_intArray actualSize]) );
+	[_intArray addInteger:42];
+	NSLog( @"%@", @([_intArray actualSize]) );
 	
 	NSUInteger len = _intArray.count;
 	for (NSInteger i=0; i<len; i++) {

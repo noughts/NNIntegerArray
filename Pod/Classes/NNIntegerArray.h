@@ -6,6 +6,11 @@
 }
 
 -(id)initWithCount:(NSUInteger)count;
+
+/// 実際にデータが入ったサイズ
+-(NSUInteger)actualSize;
+
+-(void)addInteger:(NSInteger)value;
 -(NSInteger)integerAtIndex:(NSUInteger)index;
 -(void)setInteger:(NSInteger)value atIndex:(NSUInteger)index;
 

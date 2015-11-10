@@ -1,6 +1,8 @@
 #import "NNIntegerArray.h"
 
-@implementation NNIntegerArray
+@implementation NNIntegerArray{
+	NSUInteger _actualSize;
+}
 
 @synthesize count = _count;
 
@@ -18,6 +20,7 @@
 	if (self) {
 		_count = count;
 		_array = calloc(count, sizeof(NSInteger));
+		_actualSize = 0;
 	}
 	return self;
 }
@@ -27,6 +30,17 @@
 #if !__has_feature(objc_arc)
 	[super dealloc];
 #endif
+}
+
+
+-(NSUInteger)actualSize{
+	return _actualSize;
+}
+
+
+-(void)addInteger:(NSInteger)value{
+	[self setInteger:value atIndex:_actualSize];
+	_actualSize++;
 }
 
 
