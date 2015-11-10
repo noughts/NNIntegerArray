@@ -13,18 +13,29 @@
 	
 	NSInteger count = 10000000;
 	
-	[NNProfiler start:@"calc"];
+	[NNProfiler start:@"set"];
 	_intArray = [[NNIntegerArray alloc] initWithCount:count];
 	for (int i=0; i<count; i++) {
 		[_intArray addInteger:i];
 	}
 	
+	
+	[NNProfiler end];
+}
+
+
+-(IBAction)hoge:(id)sender{
+	NSInteger count = 10000000;
+	
+	[NNProfiler start:@"get"];
 	NSInteger result = 0;
+	NSInteger* ary = _intArray.array;
 	for (NSInteger i=0; i<count; i++) {
-		result += _intArray.array[i];
+		result += ary[i];
 	}
 	[NNProfiler end];
 }
+
 
 
 @end
