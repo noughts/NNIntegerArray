@@ -31,24 +31,26 @@
 
 
 -(NSInteger)integerAtIndex:(NSUInteger)index{
-	[self checkBounds:index];
+	if (index >= _count) {
+		[self throwExceptionAtIndex:index];
+	}
 	return (NSInteger) _array[index];
 }
 
+
 -(void)setInteger:(NSInteger)value atIndex:(NSUInteger)index{
-	[self checkBounds:index];
+	if (index >= _count) {
+		[self throwExceptionAtIndex:index];
+	}
 	_array[index] = value;
 }
 
--(void)checkBounds:(NSUInteger)index{
-	if (index >= _count) {
-		NSString* message = [NSString stringWithFormat:@"*** %s: index (%@) beyond bounds (%@)", __PRETTY_FUNCTION__, @(index), @(_count)];
-		NSException* rangeException = [NSException exceptionWithName:NSRangeException reason:message userInfo:nil];
-		@throw rangeException;
-	}
+
+-(void)throwExceptionAtIndex:(NSUInteger)index{
+	NSString* message = [NSString stringWithFormat:@"*** %s: index (%@) beyond bounds (%@)", __PRETTY_FUNCTION__, @(index), @(_count)];
+	NSException* rangeException = [NSException exceptionWithName:NSRangeException reason:message userInfo:nil];
+	@throw rangeException;
 }
-
-
 
 
 
