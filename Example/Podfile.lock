@@ -1,14 +1,20 @@
 PODS:
-  - NNIntegerArray (0.1.0)
+  - NBULogStub (0.1.2)
+  - NNIntegerArray (0.4.0)
+  - NNProfiler (1.1.1):
+    - NBULogStub
 
 DEPENDENCIES:
   - NNIntegerArray (from `../`)
+  - NNProfiler
 
 EXTERNAL SOURCES:
   NNIntegerArray:
     :path: ../
 
 SPEC CHECKSUMS:
-  NNIntegerArray: 7e906597d2f8dc3378040d162bf1461be2d6343b
+  NBULogStub: 398fa3535e3b368d6f1cb3b32c2ac0cb81cf350c
+  NNIntegerArray: 5b5781c8f348921f50fdbbf6ebcc1441fe5e8141
+  NNProfiler: e2abbda27cd623b19848fa21d3c4e24732c9b648
 
 COCOAPODS: 0.38.2

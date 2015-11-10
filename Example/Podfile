@@ -1,8 +1,10 @@
+source 'https://github.com/noughts/Specs.git'
 source 'https://github.com/CocoaPods/Specs.git'
 #use_frameworks!
 
 target 'NNIntegerArray_Example', :exclusive => true do
   pod "NNIntegerArray", :path => "../"
+  pod "NNProfiler"
 end
 
 target 'NNIntegerArray_Tests', :exclusive => true do

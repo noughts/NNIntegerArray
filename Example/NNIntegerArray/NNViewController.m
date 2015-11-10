@@ -10,7 +10,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 	
-	NSInteger count = 1000000;
+	NSInteger count = 10000000;
 	
 	NSLog(@"start");
 	_intArray = [[NNIntegerArray alloc] initWithCount:count];
@@ -18,8 +18,9 @@
 		[_intArray addInteger:i];
 	}
 	
+	NSInteger result = 0;
 	for (NSInteger i=0; i<count; i++) {
-		NSInteger hoge = _intArray.array[i];
+		result += _intArray.array[i];
 	}
 	NSLog(@"end");
 }
