@@ -10,17 +10,18 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 	
-	_intArray = [[NNIntegerArray alloc] initWithCount:100];
-	NSLog( @"%@", @([_intArray actualSize]) );
-	[_intArray addInteger:42];
-	NSLog( @"%@", @([_intArray actualSize]) );
-	NSLog( @"%@", @(_intArray.array[0]) );
-
+	NSInteger count = 1000000;
 	
-	NSUInteger len = _intArray.count;
-	for (NSInteger i=0; i<len; i++) {
-		NSLog(@"%@", @([_intArray integerAtIndex:i]));
+	NSLog(@"start");
+	_intArray = [[NNIntegerArray alloc] initWithCount:count];
+	for (int i=0; i<count; i++) {
+		[_intArray addInteger:i];
 	}
+	
+	for (NSInteger i=0; i<count; i++) {
+		NSInteger hoge = _intArray.array[i];
+	}
+	NSLog(@"end");
 }
 
 
