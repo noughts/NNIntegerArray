@@ -72,26 +72,4 @@
 
 
 
-
-
-#pragma mark - NSFastEnumeration
-
--(NSUInteger)countByEnumeratingWithState:(NSFastEnumerationState *)state objects:(__unsafe_unretained id [])buffer count:(NSUInteger)len{
-	NSUInteger count = 0;
-	
-	if(state->state == 0) state->mutationsPtr = &state->extra[0];
-	
-	if(state->state < _count){
-		state->itemsPtr = buffer;
-		while((state->state < _count) && (count < len)){
-			buffer[count] = [NSNumber numberWithInteger:_array[state->state]];
-			state->state++;
-			count++;
-		}
-	} else {
-		count = 0;
-	}
-	return count;
-}
-
 @end

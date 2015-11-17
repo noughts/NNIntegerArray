@@ -9,7 +9,7 @@
 
 @import Foundation;
 
-@interface NNIntegerArray : NSObject <NSFastEnumeration>{
+@interface NNIntegerArray : NSObject{
 	NSInteger* _array;
 }
 
